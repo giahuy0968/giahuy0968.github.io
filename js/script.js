@@ -131,12 +131,4 @@ window.addEventListener('scroll', function() {
         header.style.transform = 'translateY(0)';
         header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
     }
-=======
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
 });
